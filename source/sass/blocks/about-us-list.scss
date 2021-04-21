@@ -21,20 +21,27 @@
     grid-row: 4;
     display: block;
     margin-left: -10px;
+    margin-bottom: 25px;
   }
 
-  .about-us-list__item {
-    margin-bottom: 10px;
+  .about-us-list--hidden {
+    display: none;
   }
 
   .about-us-list__link {
     display: block;
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
     transition: 0.5s;
 
     &:hover {
       color: $color-black;
     }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-us-list {
+    margin-bottom: 14px;
   }
 }

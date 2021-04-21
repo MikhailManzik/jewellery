@@ -2,6 +2,7 @@
   position: relative;
   grid-area: search;
   grid-column: 1/span 2;
+  margin-left: 27px;
 }
 
 .search__form {
@@ -27,13 +28,21 @@
 
 .search__icon {
   position: absolute;
-  left: -20px;
+  top: 3px;
+  left: -26px;
 }
 
 @media (max-width: $tablet-width) {
   .search {
     grid-column: 1/span 12;
     grid-row: 2;
+    margin-top: 37px;
+    margin-bottom: 35px;
+    margin-left: 0;
+  }
+
+  .search--hidden {
+    display: none;
   }
 
   .search__form label {
@@ -60,9 +69,17 @@
   }
 
   .search__icon {
+    top: 13px;
     left: 12px;
     width: 16px;
     height: 16px;
     fill: #ffffff;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .search {
+    margin-top: 27px;
+    margin-bottom: 25px;
   }
 }

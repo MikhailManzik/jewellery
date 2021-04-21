@@ -2,6 +2,7 @@
   grid-area: logo;
   grid-column: 6/span 2;
   text-align: center;
+  transform: translateY(13px);
 }
 
 .logo__icon {
@@ -11,10 +12,15 @@
 @media (max-width: $tablet-width) {
   .logo {
     grid-column: 2/span 2;
+    transform: translateY(2px);
   }
 
   .logo__icon {
     fill: #ffffff;
+  }
+
+  .logo__icon--color {
+    fill: $color-brown;
   }
 }
 

@@ -1,6 +1,20 @@
 .header {
-  padding-top: 30px;
+  position: relative;
+  padding-top: 17px;
   padding-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 114px;
+    width: 100vw;
+    height: 1px;
+    background-color: $line;
+  }
+}
+
+.header--border-line {
+  border-bottom: 1px solid $line;
 }
 
 .header__wrapper {
@@ -9,10 +23,23 @@
     "main-nav main-nav main-nav main-nav";
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(12, 1fr);
+  align-items: center;
 }
 
 @media (max-width: $tablet-width) {
   .header {
+    padding-top: 28px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .header--border-line {
+    border-bottom: none;
+  }
+
+  .header--bg {
     background-color: $color-brown;
   }
 
@@ -25,5 +52,11 @@
       "user-list user-list user-list";
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, auto);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header {
+    padding-top: 16px;
   }
 }
