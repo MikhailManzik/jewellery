@@ -1,0 +1,29 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template: "search logo user-list cart"
+    "main-nav main-nav main-nav main-nav";
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    background-color: $color-brown;
+  }
+
+  .header__wrapper {
+    display: grid;
+    grid-template: "toggle logo cart"
+      "search search search"
+      "main-nav main-nav main-nav"
+      "about-us-list about-us-list about-us-list"
+      "user-list user-list user-list";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+  }
+}
