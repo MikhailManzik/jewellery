@@ -1,8 +1,24 @@
 .about-us-list {
+  grid-area: about-us-list;
   display: none;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.about-us-list--footer {
+  flex-shrink: 0;
+  display: block;
+  margin-right: 36px;
+}
+
+.about-us-list__item--footer {
+  padding-top: 7px;
+  padding-bottom: 15px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .about-us-list__link {
@@ -14,9 +30,20 @@
   text-decoration: none;
 }
 
+.about-us-list__link--footer {
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 20.8px;
+  color: #ffffff;
+  transition: 0.5s;
+
+  &:hover {
+    color: $color-brown;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .about-us-list {
-    grid-area: about-us-list;
     grid-column: 1/span 4;
     grid-row: 4;
     display: block;
@@ -26,6 +53,15 @@
 
   .about-us-list--hidden {
     display: none;
+  }
+
+  .about-us-list--footer {
+    margin-right: 66px;
+  }
+
+  .about-us-list__item--footer {
+    padding-top: 0;
+    padding-bottom: 13px;
   }
 
   .about-us-list__link {
@@ -38,10 +74,22 @@
       color: $color-black;
     }
   }
+
+  .about-us-list__link--footer {
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #ffffff;
+
+    &:hover {
+      color: $color-brown;
+    }
+  }
 }
 
 @media (max-width: $mobile-width) {
-  .about-us-list {
-    margin-bottom: 14px;
+  .about-us-list--footer {
+    margin-right: 0;
+    margin-bottom: 32px;
   }
 }

@@ -1,6 +1,7 @@
 @import "fonts.scss";
 @import "normalize.scss";
 @import "variables.scss";
+@import "blocks/global.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/contrainer.scss";
 @import "blocks/header.scss";
@@ -11,4 +12,8 @@
 @import "blocks/cart.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/about-us-list.scss";
+@import "blocks/footer.scss";
+@import "blocks/subscription.scss";
+@import "blocks/services.scss";
+@import "blocks/socials.scss";
 
