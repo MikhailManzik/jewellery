@@ -1,0 +1,171 @@
+.faq {
+  max-width: 970px;
+  margin: 0 auto;
+  margin-bottom: 103px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.faq h2 {
+  margin: 0;
+  margin-bottom: 48px;
+  font-family: $font-cor;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44.2px;
+  letter-spacing: 0.03em;
+}
+
+.faq__list {
+  margin: 0;
+  padding: 0;
+  border: 1px solid $color-brown;
+  list-style: none;
+  cursor: pointer;
+}
+
+.faq__item {
+  position: relative;
+  padding: 50px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  border-bottom: 1px solid $color-brown;
+  text-align: left;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.faq__item h3 {
+  margin: 0;
+  margin-left: -8px;
+  font-family: $font-pop;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.faq__item p {
+  display: none;
+  margin: 0;
+  margin-top: 10px;
+  padding-right: 360px;
+  font-family: $font-pop;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+  transition: 0.5s;
+}
+
+.faq__item--active p {
+  display: block;
+}
+
+.faq__arrow {
+  position: absolute;
+  top: 45px;
+  right: 50px;
+}
+
+.faq__arrow svg {
+  fill: transparent;
+  stroke: $color-brown;
+  transform: rotate(180deg);
+}
+
+.faq__item--active svg {
+  transform: rotate(0deg);
+}
+
+@media (max-width: $tablet-width) {
+  .faq {
+    margin-bottom: 67px;
+    padding: 0 172px;
+  }
+
+  .faq__item {
+    padding-bottom: 44px;
+  }
+
+  .faq__item h3 {
+    margin-left: 0;
+  }
+
+  .faq__item p {
+    margin-top: 27px;
+    padding-right: 44px;
+  }
+
+  .faq__arrow {
+    top: 47px;
+    right: 48px;
+  }
+
+  .faq__arrow svg {
+    width: 26px;
+    height: 15px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .faq {
+    margin-bottom: 50px;
+    padding: 0 15px;
+  }
+
+  .faq h2 {
+    margin-bottom: 28px;
+  }
+
+  .faq__item {
+    padding: 16px 25px;
+    padding-bottom: 22px;
+  }
+
+  .faq__item h3 {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+
+  .faq__item--materials h3 {
+    padding-right: 54px;
+  }
+
+  .faq__item--deliver h3 {
+    padding-right: 84px;
+  }
+
+  .faq__item--payment h3 {
+    padding-right: 56px;
+  }
+
+  .faq__item--return h3 {
+    padding-right: 30px;
+  }
+
+  .faq__item p {
+    margin-top: 15px;
+    padding-right: 30px;
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+
+  .faq__arrow {
+    top: 23px;
+    right: 22px;
+  }
+
+  .faq__arrow svg {
+    width: 23px;
+    height: 14px;
+  }
+
+  .follow__item--sixth {
+    display: none;
+  }
+
+  .follow__item--seventh {
+    display: none;
+  }
+}

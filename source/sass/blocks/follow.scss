@@ -1,0 +1,166 @@
+.follow {
+  margin-bottom: 130px;
+  text-align: center;
+}
+
+.follow h2 {
+  margin: 0;
+  margin-bottom: 19px;
+  font-family: $font-cor;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44.2px;
+  letter-spacing: 0.03em;
+}
+
+.follow-at {
+  font-size: 42px;
+  line-height: 54.6px;
+}
+
+.follow__link {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  margin-bottom: 55px;
+  font-family: $font-pop;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.8px;
+  color: $color-black;
+  text-decoration: none;
+  transition: 0.5s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 80%;
+    height: 1px;
+    background-color: $color-brown;
+  }
+
+  &:hover {
+    color: $color-brown;
+  }
+}
+
+.follow__list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 27px;
+  grid-row-gap: 34px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.follow__item--first {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.follow__item--second {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.follow__item--third {
+  grid-column: 2/span 2;
+  grid-row: 1/span 2;
+}
+
+.follow__item--fourth {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.follow__item--fifth {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.follow__item--sixth {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.follow__item--seventh {
+  grid-column: 5;
+  grid-row: 2;
+}
+
+.follow__image {
+  display: block;
+  height: 100%;
+}
+
+@media (max-width: $tablet-width) {
+  .follow {
+    margin-bottom: 80px;
+  }
+
+  .follow h2 {
+    margin-bottom: 8px;
+  }
+
+  .follow__list {
+    grid-column-gap: 16px;
+    grid-row-gap: 20px;
+  }
+
+  .follow__image {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .follow {
+    margin-bottom: 70px;
+  }
+
+  .follow__link {
+    margin-bottom: 41px;
+  }
+
+  .follow__list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  .follow__item--first {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .follow__item--second {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .follow__item--third {
+    grid-column: 2;
+    grid-row: 1/span 2;
+  }
+
+  .follow__item--fourth {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .follow__item--fourth img {
+    margin-top: -6px;
+  }
+
+  .follow__item--fifth {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
+

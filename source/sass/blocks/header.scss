@@ -7,6 +7,7 @@
     content: "";
     position: absolute;
     top: 114px;
+    max-width: 100%;
     width: 100vw;
     height: 1px;
     background-color: $line;
@@ -29,6 +30,7 @@
 @media (max-width: $tablet-width) {
   .header {
     padding-top: 28px;
+    padding-bottom: 28px;
 
     &::before {
       display: none;
@@ -58,5 +60,6 @@
 @media (max-width: $mobile-width) {
   .header {
     padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
