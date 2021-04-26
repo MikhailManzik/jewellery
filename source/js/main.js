@@ -10,6 +10,7 @@ var userList = header.querySelector('.user-list');
 var cartIcon = header.querySelector('.cart__icon');
 var tabsFaqItems = document.querySelectorAll('.faq__item');
 var tabsFilter = document.querySelectorAll('.filter__legend');
+var filter = document.querySelector('.filter');
 
 header.classList.remove('header--bg');
 toggle.classList.add('toggle--color');
@@ -19,6 +20,7 @@ navigation.classList.add('main-nav--hidden');
 about.classList.add('about-us-list--hidden');
 userList.classList.add('user-list--hidden');
 cartIcon.classList.add('cart__icon--color');
+filter.classList.add('filter--hidden');
 
 toggle.addEventListener('click', function () {
   if (toggle.classList.contains('toggle--color')) {
