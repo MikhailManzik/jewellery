@@ -75,6 +75,10 @@
   color: $color-black;
 }
 
+.product-slider__link:hover h3 {
+  color: $color-brown;
+}
+
 .product-slider__link span {
   font-family: $font-pop;
   font-weight: 700;
@@ -90,6 +94,11 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.3);
+  }
 }
 
 .product-slider__button svg {

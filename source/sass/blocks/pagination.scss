@@ -16,6 +16,12 @@
   color: $color-grey;
   border: none;
   cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    font-size: 18px;
+    transform: translateY(-2px);
+  }
 }
 
 .pagination-list__page--active {
