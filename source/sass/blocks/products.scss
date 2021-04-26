@@ -1,0 +1,11 @@
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.products__item {
+  width: calc((100% - 60px) / 3);
+}

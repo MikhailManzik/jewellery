@@ -14,6 +14,17 @@
   }
 }
 
+.intro--catalog-page {
+  padding-top: 102px;
+  padding-bottom: 102px;
+  background-image: url("../img/bg-catalog-desktop@1x.jpg");
+  filter: none;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/intro-desktop@2x.jpg");
+  }
+}
+
 .intro__wrapper {
   text-align: center;
 }
@@ -29,6 +40,11 @@
   text-transform: uppercase;
 }
 
+.intro--catalog-page p {
+  font-size: 34px;
+  line-height: 44.2px;
+}
+
 .intro__wrapper span {
   display: block;
   margin: 0;
@@ -41,6 +57,12 @@
   text-transform: lowercase;
 }
 
+.intro--catalog-page span {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28.6px;
+}
+
 @media (max-width: $tablet-width) {
   .intro {
     margin-bottom: 70px;
@@ -49,6 +71,14 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/intro-tablet@2x.jpg");
+    }
+  }
+
+  .intro--catalog-page {
+    background-image: url("../img/bg-catalog-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-catalog-tablet@2x.jpg");
     }
   }
 
@@ -67,6 +97,14 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/intro-mobile@2x.jpg");
+    }
+  }
+
+  .intro--catalog-page {
+    background-image: url("../img/bg-catalog-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-catalog-mobile@2x.jpg");
     }
   }
 

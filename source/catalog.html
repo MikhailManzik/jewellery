@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="jewellery, earrings, necklace">
   <title>Jewellery</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/poppins-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/poppins-v15-latin-500.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/poppins-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font" type="font/woff2"
+    crossorigin="">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-italic.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-500.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-500italic.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-500italic.woff2" as="font" type="font/woff2"
+    crossorigin="">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
+
 <body>
   <header class="header header--bg">
     <div class="header__wrapper container">
@@ -26,14 +31,15 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="header__search search">
-          <form class="search__form" action="https://echo.htmlacademy.ru" method="GET">
-            <svg class="search__icon" width="14" height="14">
-              <use xlink:href="img/sprite_auto.svg#icon-search"></use>
-            </svg>
-            <label>
-              <input type="text" name="text for search" placeholder="Type here to search" minlength="1" maxlength="25" required>
-            </label>
-          </form>
+        <form class="search__form" action="https://echo.htmlacademy.ru" method="GET">
+          <svg class="search__icon" width="14" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+          </svg>
+          <label>
+            <input type="text" name="text for search" placeholder="Type here to search" minlength="1" maxlength="25"
+              required>
+          </label>
+        </form>
       </div>
       <a class="header__logo logo">
         <svg class="logo__icon" width="66" height="66">
@@ -55,36 +61,440 @@
         </a>
       </div>
       <nav class="header__main-nav main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">What’s new</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Chokers</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Necklaces</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Rings</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Earrings</a>
-            </li>
-          </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">What’s new</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Chokers</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Necklaces</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Rings</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Earrings</a>
+          </li>
+        </ul>
       </nav>
       <ul class="header__about-us-list about-us-list">
         <li class="about-us-list__item">
-          <a class="about-us-list__link" href="#">About CH</a></li>
+          <a class="about-us-list__link" href="#">About CH</a>
+        </li>
         <li class="about-us-list__item">
-          <a class="about-us-list__link" href="#">Stores & Hours</a></li>
+          <a class="about-us-list__link" href="#">Stores & Hours</a>
+        </li>
         <li class="about-us-list__item">
-          <a class="about-us-list__link" href="#">Contact Us</a></li>
+          <a class="about-us-list__link" href="#">Contact Us</a>
+        </li>
       </ul>
     </div>
   </header>
 
+  <main>
+    <h1 class="visually-hidden">Catalog</h1>
+    <div class="intro intro--catalog-page">
+      <div class="intro__wrapper container">
+        <p>All Jewellery</p>
+        <span>Discover picks of fashion's finest trends in our jewellery catalog</span>
+      </div>
+    </div>
+    <div class="container">
+      <!-- <aside>filter</aside> -->
+      <section class="products">
+        <ul class="products__list">
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <picture>
+                <!-- 1х: 130px; 2x: 260px -->
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/double-pearl-earrings-mobile@1x.webp 1x, img/double-pearl-earrings-mobile@2x.webp 2x">
+                <!-- 1х: 206px; 2x: 412px -->
+                <source type="image/webp" media="(max-width:1023px)"
+                  srcset="img/double-pearl-earrings-tablet@1x.webp 1x, img/double-pearl-earrings-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp"
+                  srcset="img/double-pearl-earrings-desktop@1x.webp 1x, img/double-pearl-earrings-desktop@2x.webp 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/double-pearl-earrings-mobile@1x.jpg 1x, img/double-pearl-earrings-mobile@2x.jpg 2x">
+                <source media="(max-width:1023px)"
+                  srcset="img/double-pearl-earrings-tablet@1x.jpg 1x, img/double-pearl-earrings-tablet@2x.jpg 2x">
+                <img class="products__image" src="img/double-pearl-earrings-desktop@1x.jpg"
+                  srcset="img/double-pearl-earrings-desktop@2x.jpg 2x" width="270" height="272"
+                  alt="double-pearl-earrings">
+              </picture>
+              <h3>Double pearl earrings</h3>
+              <span>$ 115</span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <picture>
+                <!-- 1х: 130px; 2x: 260px -->
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/black-choker-gold-bead-mobile@1x.webp 1x, img/black-choker-gold-bead-mobile@2x.webp 2x">
+                <!-- 1х: 206px; 2x: 412px -->
+                <source type="image/webp" media="(max-width:1023px)"
+                  srcset="img/black-choker-gold-bead-tablet@1x.webp 1x, img/black-choker-gold-bead-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp"
+                  srcset="img/black-choker-gold-bead-desktop@1x.webp 1x, img/black-choker-gold-bead-desktop@2x.webp 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/black-choker-gold-bead-mobile@1x.jpg 1x, img/black-choker-gold-bead-mobile@2x.jpg 2x">
+                <source media="(max-width:1023px)"
+                  srcset="img/black-choker-gold-bead-tablet@1x.jpg 1x, img/black-choker-gold-bead-tablet@2x.jpg 2x">
+                <img class="products__image" src="img/black-choker-gold-bead-desktop@1x.jpg"
+                  srcset="img/black-choker-gold-bead-desktop@2x.jpg 2x" width="270" height="272"
+                  alt="black-choker-gold-bead">
+              </picture>
+              <h3>Choker with gold bead</h3>
+              <span>$ 55</span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <picture>
+                <!-- 1х: 130px; 2x: 260px -->
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/gold-layered-necklace-mobile@1x.webp 1x, img/gold-layered-necklace-mobile@2x.webp 2x">
+                <!-- 1х: 206px; 2x: 412px -->
+                <source type="image/webp" media="(max-width:1023px)"
+                  srcset="img/gold-layered-necklace-tablet@1x.webp 1x, img/gold-layered-necklace-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp"
+                  srcset="img/gold-layered-necklace-desktop@1x.webp 1x, img/gold-layered-necklace-desktop@2x.webp 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/gold-layered-necklace-mobile@1x.jpg 1x, img/gold-layered-necklace-mobile@2x.jpg 2x">
+                <source media="(max-width:1023px)"
+                  srcset="img/gold-layered-necklace-tablet@1x.jpg 1x, img/gold-layered-necklace-tablet@2x.jpg 2x">
+                <img class="products__image" src="img/gold-layered-necklace-desktop@1x.jpg"
+                  srcset="img/gold-layered-necklace-desktop@2x.jpg 2x" width="270" height="272"
+                  alt="gold-layered-necklace">
+              </picture>
+              <h3>Gold layered necklace</h3>
+              <span>$ 155</span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <picture>
+                <!-- 1х: 130px; 2x: 260px -->
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/blue-gemstone-pendant-mobile@1x.webp 1x, img/blue-gemstone-pendant-mobile@2x.webp 2x">
+                <!-- 1х: 206px; 2x: 412px -->
+                <source type="image/webp" media="(max-width:1023px)"
+                  srcset="img/blue-gemstone-pendant-tablet@1x.webp 1x, img/blue-gemstone-pendant-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp"
+                  srcset="img/blue-gemstone-pendant-desktop@1x.webp 1x, img/blue-gemstone-pendant-desktop@2x.webp 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/blue-gemstone-pendant-mobile@1x.jpg 1x, img/blue-gemstone-pendant-mobile@2x.jpg 2x">
+                <source media="(max-width:1023px)"
+                  srcset="img/blue-gemstone-pendant-tablet@1x.jpg 1x, img/blue-gemstone-pendant-tablet@2x.jpg 2x">
+                <img class="products__image" src="img/blue-gemstone-pendant-desktop@1x.jpg"
+                  srcset="img/blue-gemstone-pendant-desktop@2x.jpg 2x" width="270" height="272"
+                  alt="blue-gemstone-pendant">
+              </picture>
+              <h3>Blue gemstone pendant</h3>
+              <span>$ 105</span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <picture>
+                <!-- 1х: 130px; 2x: 260px -->
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/boho-earrings-mobile@1x.webp 1x, img/boho-earrings-mobile@2x.webp 2x">
+                <!-- 1х: 206px; 2x: 412px -->
+                <source type="image/webp" media="(max-width:1023px)"
+                  srcset="img/boho-earrings-tablet@1x.webp 1x, img/boho-earrings-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp"
+                  srcset="img/boho-earrings-desktop@1x.webp 1x, img/boho-earrings-desktop@2x.webp 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/double-pearl-earrings-mobile@1x.jpg 1x, img/boho-earrings-mobile@2x.jpg 2x">
+                <source media="(max-width:1023px)"
+                  srcset="img/boho-earrings-tablet@1x.jpg 1x, img/boho-earrings-tablet@2x.jpg 2x">
+                <img class="products__image" src="img/boho-earrings-desktop@1x.jpg"
+                  srcset="img/boho-earrings-desktop@2x.jpg 2x" width="270" height="272"
+                  alt="boho-earrings">
+              </picture>
+              <h3>Boho earrings</h3>
+              <span>$ 75</span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <picture>
+                <!-- 1х: 130px; 2x: 260px -->
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/bird-necklace-mobile@1x.webp 1x, img/bird-necklace-mobile@2x.webp 2x">
+                <!-- 1х: 206px; 2x: 412px -->
+                <source type="image/webp" media="(max-width:1023px)"
+                  srcset="img/bird-necklace-tablet@1x.webp 1x, img/bird-necklace-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp"
+                  srcset="img/bird-necklace-desktop@1x.webp 1x, img/bird-necklace-desktop@2x.webp 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/bird-necklace-mobile@1x.jpg 1x, img/bird-necklace-mobile@2x.jpg 2x">
+                <source media="(max-width:1023px)"
+                  srcset="img/bird-necklace-tablet@1x.jpg 1x, img/bird-necklace-tablet@2x.jpg 2x">
+                <img class="products__image" src="img/bird-necklace-desktop@1x.jpg"
+                  srcset="img/bird-necklace-desktop@2x.jpg 2x" width="270" height="272"
+                  alt="bird-necklace">
+              </picture>
+              <h3>Gold bird necklace</h3>
+              <span>$ 135</span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <picture>
+                <!-- 1х: 130px; 2x: 260px -->
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/black-leather-choker-necklace-mobile@1x.webp 1x, img/black-leather-choker-necklace-mobile@2x.webp 2x">
+                <!-- 1х: 206px; 2x: 412px -->
+                <source type="image/webp" media="(max-width:1023px)"
+                  srcset="img/black-leather-choker-necklace-tablet@1x.webp 1x, img/black-leather-choker-necklace-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp"
+                  srcset="img/black-leather-choker-necklace-desktop@1x.webp 1x, img/black-leather-choker-necklace-desktop@2x.webp 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/black-leather-choker-necklace-mobile@1x.jpg 1x, img/black-leather-choker-necklace-mobile@2x.jpg 2x">
+                <source media="(max-width:1023px)"
+                  srcset="img/black-leather-choker-necklace-tablet@1x.jpg 1x, img/black-leather-choker-necklace-tablet@2x.jpg 2x">
+                <img class="products__image" src="img/black-leather-choker-necklace-desktop@1x.jpg"
+                  srcset="img/black-leather-choker-necklace-desktop@2x.jpg 2x" width="270" height="272"
+                  alt="black-leather-choker-necklace">
+              </picture>
+              <h3>Black leather choker</h3>
+              <span>$ 85</span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <picture>
+                <!-- 1х: 130px; 2x: 260px -->
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/purple-gemstone-necklace-mobile@1x.webp 1x, img/purple-gemstone-necklace-mobile@2x.webp 2x">
+                <!-- 1х: 206px; 2x: 412px -->
+                <source type="image/webp" media="(max-width:1023px)"
+                  srcset="img/purple-gemstone-necklace-tablet@1x.webp 1x, img/purple-gemstone-necklace-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp"
+                  srcset="img/purple-gemstone-necklace-desktop@1x.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/purple-gemstone-necklace-mobile@1x.jpg 1x, img/purple-gemstone-necklace-mobile@2x.jpg 2x">
+                <source media="(max-width:1023px)"
+                  srcset="img/purple-gemstone-necklace-tablet@1x.jpg 1x, img/purple-gemstone-necklace-tablet@2x.jpg 2x">
+                <img class="products__image" src="img/purple-gemstone-necklace-desktop@1x.jpg"
+                  srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="272"
+                  alt="purple-gemstone-necklace">
+              </picture>
+              <h3>Necklace with amethyst</h3>
+              <span>$ 145</span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <picture>
+                <!-- 1х: 130px; 2x: 260px -->
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/elephant-earrings-mobile@1x.webp 1x, img/elephant-earrings-mobile@2x.webp 2x">
+                <!-- 1х: 206px; 2x: 412px -->
+                <source type="image/webp" media="(max-width:1023px)"
+                  srcset="img/elephant-earrings-tablet@1x.webp 1x, img/elephant-earrings-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp"
+                  srcset="img/elephant-earrings-desktop@1x.webp 1x, img/elephant-earrings-desktop@2x.webp 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/elephant-earrings-mobile@1x.jpg 1x, img/elephant-earrings-mobile@2x.jpg 2x">
+                <source media="(max-width:1023px)"
+                  srcset="img/elephant-earrings-tablet@1x.jpg 1x, img/elephant-earrings-tablet@2x.jpg 2x">
+                <img class="products__image" src="img/elephant-earrings-desktop@1x.jpg"
+                  srcset="img/elephant-earrings-desktop@2x.jpg 2x" width="270" height="272"
+                  alt="elephant-earrings">
+              </picture>
+              <h3>Elephant earrings</h3>
+              <span>$ 95</span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <picture>
+                <!-- 1х: 130px; 2x: 260px -->
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/threader-necklace-closeup-mobile@1x.webp 1x, img/threader-necklace-closeup-mobile@2x.webp 2x">
+                <!-- 1х: 206px; 2x: 412px -->
+                <source type="image/webp" media="(max-width:1023px)"
+                  srcset="img/threader-necklace-closeup-tablet@1x.webp 1x, img/threader-necklace-closeup-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp"
+                  srcset="img/threader-necklace-closeup-desktop@1x.webp 1x, img/threader-necklace-closeup-desktop@2x.webp 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/threader-necklace-closeup-mobile@1x.jpg 1x, img/threader-necklace-closeup-mobile@2x.jpg 2x">
+                <source media="(max-width:1023px)"
+                  srcset="img/threader-necklace-closeup-tablet@1x.jpg 1x, img/threader-necklace-closeup-tablet@2x.jpg 2x">
+                <img class="products__image" src="img/threader-necklace-closeup-desktop@1x.jpg"
+                  srcset="img/threader-necklace-closeup-desktop@2x.jpg 2x" width="270" height="272"
+                  alt="threader-necklace-closeup">
+              </picture>
+              <h3>Threader necklace</h3>
+              <span>$ 115</span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <picture>
+                <!-- 1х: 130px; 2x: 260px -->
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/origami-crane-necklace-mobile@1x.webp 1x, img/origami-crane-necklace-mobile@2x.webp 2x">
+                <!-- 1х: 206px; 2x: 412px -->
+                <source type="image/webp" media="(max-width:1023px)"
+                  srcset="img/origami-crane-necklace-tablet@1x.webp 1x, img/origami-crane-necklace-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp"
+                  srcset="img/origami-crane-necklace-desktop@1x.webp 1x, img/origami-crane-necklace-desktop@2x.webp 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/origami-crane-necklace-mobile@1x.jpg 1x, img/origami-crane-necklace-mobile@2x.jpg 2x">
+                <source media="(max-width:1023px)"
+                  srcset="img/origami-crane-necklace-tablet@1x.jpg 1x, img/origami-crane-necklace-tablet@2x.jpg 2x">
+                <img class="products__image" src="img/origami-crane-necklace-desktop@1x.jpg"
+                  srcset="img/origami-crane-necklace-desktop@2x.jpg 2x" width="270" height="272"
+                  alt="origami-crane-necklace">
+              </picture>
+              <h3>Origami crane necklace</h3>
+              <span>$ 105</span>
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <picture>
+                <!-- 1х: 130px; 2x: 260px -->
+                <source type="image/webp" media="(max-width:767px)"
+                  srcset="img/marble-earrings-mobile@1x.webp 1x, img/marble-earrings-mobile@2x.webp 2x">
+                <!-- 1х: 206px; 2x: 412px -->
+                <source type="image/webp" media="(max-width:1023px)"
+                  srcset="img/marble-earrings-tablet@1x.webp 1x, img/marble-earrings-tablet@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source type="image/webp"
+                  srcset="img/marble-earrings-desktop@1x.webp 1x, img/marble-earrings-desktop@2x.webp 2x">
+
+                <source media="(max-width:767px)"
+                  srcset="img/marble-earrings-mobile@1x.jpg 1x, img/marble-earrings-mobile@2x.jpg 2x">
+                <source media="(max-width:1023px)"
+                  srcset="img/marble-earrings-tablet@1x.jpg 1x, img/marble-earrings-tablet@2x.jpg 2x">
+                <img class="products__image" src="img/marble-earrings-desktop@1x.jpg"
+                  srcset="img/marble-earrings-desktop@2x.jpg 2x" width="270" height="272"
+                  alt="marble-earrings">
+              </picture>
+              <h3>Double pearl earrings</h3>
+              <span>$ 95</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <div class="footer__subscription subscription">
+        <p>The good stuff in&nbsp;your inbox</p>
+        <span>News and updates from CH. No&nbsp;spam, we&nbsp;promise.</span>
+        <form class="subscription__form" action="https://echo.htmlacademy.ru" method="POST">
+          <label>
+            <input type="email" name="email" placeholder="Your E-mail" minlength="1" maxlength="25" required>
+          </label>
+          <button class="subscription__button" type="submit">
+            Sign Up
+            <svg width="30" height="11">
+              <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+      </div>
+      <div class="footer__group-block">
+        <ul class="footer__services services">
+          <li class="services__item">
+            <a class="services__link" href="#">Ordering & Payment</a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">Terms & Conditions</a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">Returns & Exchanges</a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">Delivery</a>
+          </li>
+        </ul>
+        <ul class="footer__about-us-list about-us-list about-us-list--footer">
+          <li class="about-us-list__item about-us-list__item--footer">
+            <a class="about-us-list__link  about-us-list__link--footer" href="#">About CH</a>
+          </li>
+          <li class="about-us-list__item about-us-list__item--footer">
+            <a class="about-us-list__link  about-us-list__link--footer" href="#">Stores & Hours</a>
+          </li>
+          <li class="about-us-list__item about-us-list__item--footer">
+            <a class="about-us-list__link  about-us-list__link--footer" href="#">Jobs</a>
+          </li>
+          <li class="about-us-list__item about-us-list__item--footer">
+            <a class="about-us-list__link  about-us-list__link--footer" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="footer__socials-list socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#" aria-label="Facebook">
+              <svg class="socials-list__icon" width="8" height="15">
+                <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+              </svg>
+              <span class="socials-list__social-name">Facebook</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#" aria-label="Instagram">
+              <svg class="socials-list__icon" width="15" height="15">
+                <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
+              </svg>
+              <span class="socials-list__social-name">Instagram</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#" aria-label="Pinterest">
+              <svg class="socials-list__icon" width="16" height="15">
+                <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
+              </svg>
+              <span class="socials-list__social-name">Pinterest</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#" aria-label="Twitter">
+              <svg class="socials-list__icon" width="15" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+              </svg>
+              <span class="socials-list__social-name">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>
-</html>
 
+</html>
