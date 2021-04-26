@@ -1,0 +1,35 @@
+.filter-range {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 11px;
+}
+
+.filter-range__label {
+  width: 25%;
+}
+
+.filter-range__money {
+  font-family: $font-pop;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.2px;
+  color: $color-black;
+}
+
+.filter-range__input {
+  width: 50%;
+  font-family: $font-pop;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.2px;
+  color: $color-black;
+  border: none;
+}
+
+.filter-range__label--min {
+  margin-left: 27px;
+}
+
+.filter-range__label--max {
+  margin-right: 9px;
+}

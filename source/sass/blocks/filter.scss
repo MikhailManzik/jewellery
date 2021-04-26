@@ -1,6 +1,13 @@
 .filter {
-  width: 250px;
   margin-right: 50px;
+}
+
+.filter--hidden {
+  display: none;
+}
+
+.filter__form {
+  width: 250px;
 }
 
 .filter__wrapper {
@@ -11,9 +18,7 @@
 .filter__type {
   position: relative;
   margin: 0;
-  margin-top: 25px;
-  padding: 25px;
-  padding-top: 30px;
+  padding: 0;
   border: none;
   border-bottom: 1px solid $color-brown;
 
@@ -24,7 +29,7 @@
 
 .filter__legend svg {
   position: absolute;
-  top: 14px;
+  top: 30px;
   right: 24px;
   fill: transparent;
   stroke: $color-brown;
@@ -37,19 +42,26 @@
 
 .filter__fields {
   display: none;
-  padding-left: 8px;
+  margin-top: -3px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
 }
 
-.filter__fields--indent {
-  padding-left: 0;
+.filter__fields--price {
+  padding-bottom: 17px;
+}
+
+.filter__field {
+  margin-bottom: 4px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .filter__legend--active + .filter__fields {
   display: block;
-}
-
-.filter__field {
-  margin-bottom: 3px;
 }
 
 .filter__field input {
@@ -65,17 +77,18 @@
   overflow: hidden;
 }
 
-.filter__field input:focus +  label{
-  &::after{
-  outline: 0;
-  box-shadow: 0 0 0 2px $color-black;
-  border-radius: 2px;
+.filter__field input:focus + label {
+  &::after {
+    outline: 0;
+    box-shadow: 0 0 0 2px $color-black;
+    border-radius: 2px;
   }
 }
 
 .filter__legend {
   width: 100%;
-  padding: 10px 0;
+  padding: 23px;
+  padding-left: 25px;
   font-family: $font-pop;
   font-weight: 500;
   font-size: 16px;
@@ -87,18 +100,19 @@
   position: relative;
   max-width: 100%;
   display: block;
-  padding: 6px;
-  padding-left: 30px;
+  padding: 4px;
+  padding-left: 27px;
   font-family: $font-pop;
   font-weight: 500;
   font-size: 14px;
   line-height: 18.2px;
   cursor: pointer;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
-    left: 0;
+    top: 6px;
+    left: 1px;
     width: 14px;
     height: 13px;
     border: 1px solid $color-brown;
@@ -106,7 +120,14 @@
 }
 
 .filter__field input:checked + label {
-  &:after {
+  &::after {
     background-color: $color-brown;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .filter__form {
+    width: 423px;
+    box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
   }
 }

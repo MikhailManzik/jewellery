@@ -1,13 +1,14 @@
 .button {
   display: block;
   width: 100%;
-  padding: 25px 0;
+  padding: 24px 0;
   font-family: $font-pop;
   font-weight: 500;
   font-size: 16px;
   line-height: 20.8px;
+  color: #ffffff;
+  background-color: $color-brown;
   border: none;
-  background-color: transparent;
   cursor: pointer;
   transition: 0.5s;
 
@@ -16,12 +17,23 @@
   }
 }
 
+.button--filter {
+  display: none;
+}
+
 .button--submit {
-  margin-bottom: 25px;
-  color: #ffffff;
-  background-color: $color-brown;
+  margin-bottom: 24px;
 }
 
 .button--reset {
+  color: $color-black;
+  background-color: transparent;
   border: 1px solid $color-brown;
+}
+
+@media (max-width: $tablet-width) {
+  .button--filter {
+    display: block;
+    margin-bottom: 50px;
+  }
 }

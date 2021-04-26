@@ -1,3 +1,9 @@
 .catalog-colums {
   display: flex;
 }
+
+@media (max-width: $tablet-width) {
+  .catalog-colums {
+    flex-direction: column;
+  }
+}
