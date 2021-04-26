@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  width: 100%;
+  padding: 25px 0;
+  font-family: $font-pop;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    font-size: 18px;
+  }
+}
+
+.button--submit {
+  margin-bottom: 25px;
+  color: #ffffff;
+  background-color: $color-brown;
+}
+
+.button--reset {
+  border: 1px solid $color-brown;
+}

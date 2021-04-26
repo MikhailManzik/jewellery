@@ -1,0 +1,40 @@
+.filter-controls {
+  position: relative;
+}
+
+.filter-controls__scale {
+  position: relative;
+  height: 1px;
+  background-color: $color-ligth-grey;
+}
+
+.filter-controls__bar {
+  position: absolute;
+  left: 50px;
+  width: 54%;
+  height: 1px;
+  background-color: $color-brown;
+}
+
+.filter-controls__toggle {
+  position: absolute;
+  top: -7px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $color-brown;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+.filter-controls__toggle-min {
+  left: 44px;
+}
+
+.filter-controls__toggle-max {
+  right: 35px;
+}
