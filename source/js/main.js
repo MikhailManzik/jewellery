@@ -9,6 +9,7 @@ var about = header.querySelector('.about-us-list');
 var userList = header.querySelector('.user-list');
 var cartIcon = header.querySelector('.cart__icon');
 var tabsFaqItems = document.querySelectorAll('.faq__item');
+var tabsFilter = document.querySelectorAll('.filter__legend');
 
 header.classList.remove('header--bg');
 toggle.classList.add('toggle--color');
@@ -41,13 +42,13 @@ toggle.addEventListener('click', function () {
   }
 });
 
-var switchTabsAccordion = function (tabs) {
+var switchTabsAccordion = function (tabs, className) {
   tabs.forEach(function (tab) {
     tab.addEventListener('click', function () {
-      if (tab.classList.contains('faq__item--active')) {
-        tab.classList.remove('faq__item--active');
+      if (tab.classList.contains(className)) {
+        tab.classList.remove(className);
       } else {
-        tab.classList.add('faq__item--active');
+        tab.classList.add(className);
       }
     });
   });
@@ -98,4 +99,5 @@ if (swiperContainer) {
 }
 
 
-switchTabsAccordion(tabsFaqItems);
+switchTabsAccordion(tabsFaqItems, 'faq__item--active');
+switchTabsAccordion(tabsFilter, 'filter__legend--active');
