@@ -11,6 +11,12 @@ var cartIcon = header.querySelector('.cart__icon');
 var tabsFaqItems = document.querySelectorAll('.faq__item');
 var tabsFilter = document.querySelectorAll('.filter__legend');
 var filter = document.querySelector('.filter');
+var filterPopup = document.querySelector('.filter__products');
+var buttonFilter = document.querySelector('.button--filter');
+var body = document.querySelector('body');
+var buttonClose = filter.querySelector('.filter__close');
+var overlay = filter.querySelector('.filter__overlay');
+var form = filter.querySelector('.filter__form');
 
 header.classList.remove('header--bg');
 toggle.classList.add('toggle--color');
@@ -20,7 +26,30 @@ navigation.classList.add('main-nav--hidden');
 about.classList.add('about-us-list--hidden');
 userList.classList.add('user-list--hidden');
 cartIcon.classList.add('cart__icon--color');
-filter.classList.add('filter--hidden');
+
+if (buttonFilter) {
+  if (buttonFilter.classList.contains('button--hidden')) {
+    buttonFilter.classList.remove('button--hidden');
+  }
+}
+
+if (filter) {
+  if (filter.classList.contains('filter--overlay')) {
+    filter.classList.remove('filter--overlay');
+  }
+}
+
+if (buttonClose) {
+  if (buttonClose.classList.contains('filter__close--hidden')) {
+    buttonClose.classList.remove('filter__close--hidden');
+  }
+}
+
+if (filterPopup) {
+  if (!filterPopup.classList.contains('filter__products--hidden')) {
+    filterPopup.classList.add('filter__products--hidden');
+  }
+}
 
 toggle.addEventListener('click', function () {
   if (toggle.classList.contains('toggle--color')) {
@@ -99,6 +128,45 @@ if (swiperContainer) {
 
   swiper.slideNext();
 }
+
+if (buttonFilter) {
+  buttonFilter.addEventListener('click', function () {
+    if (!filterPopup.classList.contains('filter__products--show')) {
+      filterPopup.classList.add('filter__products--show');
+      filterPopup.classList.remove('filter__products--hidden');
+      body.classList.add('scroll');
+      overlay.classList.add('filter__overlay--show');
+      filter.classList.remove('filter--hidden');
+      filter.classList.add('filter--position');
+      form.classList.add('filter__form--position');
+    }
+  });
+}
+
+if (tabsFilter) {
+  tabsFilter.forEach(function (tab) {
+    if (!tab.classList.contains('filter__legend--hidden')) {
+      tab.classList.add('filter__legend--hidden');
+    }
+  });
+}
+
+var closePopup = function () {
+  filterPopup.classList.remove('filter__products--show');
+  filterPopup.classList.add('filter__products--hidden');
+  body.classList.remove('scroll');
+  overlay.classList.remove('filter__overlay--show');
+  filter.classList.add('filter--hidden');
+  filter.classList.remove('filter--position');
+};
+
+var addHandler = function (element) {
+  element.addEventListener('click', closePopup);
+};
+
+
+addHandler(buttonClose);
+addHandler(overlay);
 
 
 switchTabsAccordion(tabsFaqItems, 'faq__item--active');

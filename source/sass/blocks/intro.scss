@@ -80,6 +80,9 @@
   }
 
   .intro--catalog-page {
+    padding-top: 93px;
+    padding-bottom: 94px;
+    margin-bottom: 50px;
     background-image: url("../img/bg-catalog-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -90,6 +93,11 @@
   .intro__wrapper span,
   .intro__wrapper p {
     margin-left: -17px;
+  }
+
+  .intro--catalog-page p,
+  .intro--catalog-page span {
+    margin-left: 0;
   }
 }
 

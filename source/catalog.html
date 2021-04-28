@@ -102,100 +102,111 @@
       </div>
     </div>
     <div class="catalog-colums container">
-      <button class="button button--filter">Filter</button>
-      <aside class="filter">
-        <form class="filter__form" action="https://echo.htmlacademy.ru" method="GET">
-          <div class="filter__wrapper">
-            <fieldset class="filter__type">
-              <legend class="filter__legend filter__legend--active">Product
-                <svg width="15" height="8">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
-                </svg>
-              </legend>
-              <div class="filter__fields">
-                <div class="filter__field">
-                  <input type="checkbox" id="necklaces" name="necklaces" checked>
-                  <label for="necklaces">Necklaces</label>
-                </div>
-                <div class="filter__field">
-                  <input type="checkbox" id="chokers" name="chokers" checked>
-                  <label for="chokers">Chokers</label>
-                </div>
-                <div class="filter__field">
-                  <input type="checkbox" id="rings" name="rings">
-                  <label for="rings">Rings</label>
-                </div>
-                <div class="filter__field">
-                  <input type="checkbox" id="earrings" name="earrings" checked>
-                  <label for="earrings">Earrings</label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="filter__type">
-              <legend class="filter__legend">Material
-                <svg width="15" height="8">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
-                </svg>
-              </legend>
-              <div class="filter__fields">
-                <div class="filter__field">
-                  <input type="checkbox" id="gold" name="gold">
-                  <label for="gold">Gold</label>
-                </div>
-                <div class="filter__field">
-                  <input type="checkbox" id="silver" name="silver">
-                  <label for="silver">Silver</label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="filter__type">
-              <legend class="filter__legend">Collection
-                <svg width="15" height="8">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
-                </svg>
-              </legend>
-              <div class="filter__fields">
-                <div class="filter__field">
-                  <input type="checkbox" id="pink-flamingo" name="pink flamingo">
-                  <label for="pink-flamingo">Pink flamingo</label>
-                </div>
-                <div class="filter__field">
-                  <input type="checkbox" id="dreams" name="dreams">
-                  <label for="dreams">Dreams</label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="filter__type">
-              <legend class="filter__legend filter__legend--active">Price
-                <svg width="15" height="8">
-                  <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
-                </svg>
-              </legend>
-              <div class="filter__fields filter__fields--price">
-                <div class="filter-controls">
-                  <div class="filter-controls__scale">
-                    <div class="filter-controls__bar"></div>
+      <button class="button button--filter button--hidden">Filter</button>
+      <aside class="filter filter--hidden">
+        <div class="filter__overlay"></div>
+        <div class="filter__products">
+          <form class="filter__form" action="https://echo.htmlacademy.ru" method="GET">
+            <div class="filter__wrapper">
+              <fieldset class="filter__type">
+                <legend class="filter__legend filter__legend--active">Product
+                  <svg width="15" height="8">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+                  </svg>
+                </legend>
+                <div class="filter__fields">
+                  <div class="filter__field">
+                    <input type="checkbox" id="necklaces" name="necklaces" checked>
+                    <label for="necklaces">Necklaces</label>
                   </div>
-                  <div class="filter-controls__toggle filter-controls__toggle-min"></div>
-                  <div class="filter-controls__toggle filter-controls__toggle-max"></div>
+                  <div class="filter__field">
+                    <input type="checkbox" id="chokers" name="chokers" checked>
+                    <label for="chokers">Chokers</label>
+                  </div>
+                  <div class="filter__field">
+                    <input type="checkbox" id="rings" name="rings">
+                    <label for="rings">Rings</label>
+                  </div>
+                  <div class="filter__field">
+                    <input type="checkbox" id="earrings" name="earrings" checked>
+                    <label for="earrings">Earrings</label>
+                  </div>
                 </div>
-                <div class="filter-range">
-                <label class="filter-range__label filter-range__label--min" for="min-price">
-                  <span class="filter-range__money">$</span>
-                  <input class="filter-range__input" type="text" name="min-price" id="min-price" value="55">
-                </label>
-                <label class="filter-range__label filter-range__label--max" for="max-price">
-                  <span class="filter-range__money">$</span>
-                  <input class="filter-range__input" type="text" name="max-price" id="max-price" value="155">
-                </label>
-              </div>
-              </div>
+              </fieldset>
+              <fieldset class="filter__type">
+                <legend class="filter__legend">Material
+                  <svg width="15" height="8">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+                  </svg>
+                </legend>
+                <div class="filter__fields">
+                  <div class="filter__field">
+                    <input type="checkbox" id="gold" name="gold">
+                    <label for="gold">Gold</label>
+                  </div>
+                  <div class="filter__field">
+                    <input type="checkbox" id="silver" name="silver">
+                    <label for="silver">Silver</label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="filter__type">
+                <legend class="filter__legend">Collection
+                  <svg width="15" height="8">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+                  </svg>
+                </legend>
+                <div class="filter__fields">
+                  <div class="filter__field">
+                    <input type="checkbox" id="pink-flamingo" name="pink flamingo">
+                    <label for="pink-flamingo">Pink flamingo</label>
+                  </div>
+                  <div class="filter__field">
+                    <input type="checkbox" id="dreams" name="dreams">
+                    <label for="dreams">Dreams</label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="filter__type">
+                <legend class="filter__legend filter__legend--active">Price
+                  <svg width="15" height="8">
+                    <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+                  </svg>
+                </legend>
+                <div class="filter__fields filter__fields--price">
+                  <div class="filter-controls">
+                    <div class="filter-controls__scale">
+                      <div class="filter-controls__bar"></div>
+                    </div>
+                    <div class="filter-controls__toggle filter-controls__toggle-min"></div>
+                    <div class="filter-controls__toggle filter-controls__toggle-max"></div>
+                  </div>
+                  <div class="filter-range">
+                    <label class="filter-range__label filter-range__label--min" for="min-price">
+                      <span class="filter-range__money">$</span>
+                      <input class="filter-range__input" type="text" name="min-price" id="min-price" value="55">
+                    </label>
+                    <label class="filter-range__label filter-range__label--max" for="max-price">
+                      <span class="filter-range__money">$</span>
+                      <input class="filter-range__input" type="text" name="max-price" id="max-price" value="155">
+                    </label>
+                  </div>
+                </div>
 
-            </fieldset>
-          </div>
-          <button class="button button--submit" type="submit">Apply</button>
-          <button class="button button--reset" type="reset">Clear All</button>
-        </form>
+              </fieldset>
+            </div>
+            <div class="filter__buttons">
+              <button class="button button--submit" type="submit">Apply</button>
+              <button class="button button--reset" type="reset">Clear All</button>
+            </div>
+          </form>
+          <button class="filter__close filter__close--hidden" type="button">
+            <svg width="32" height="32">
+              <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+            </svg>
+            <span class="visually-hidden">Close</span>
+          </button>
+        </div>
       </aside>
       <section class="products">
         <div class="products__wrapper">
@@ -384,16 +395,14 @@
                   <source type="image/webp" media="(max-width:1023px)"
                     srcset="img/product-8-tablet@1x.webp 1x, img/product-8-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp"
-                    srcset="img/product-8-desktop@1x.webp 1x, img/product-8-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/product-8-desktop@1x.webp 1x, img/product-8-desktop@2x.webp 2x">
 
                   <source media="(max-width:767px)"
                     srcset="img/product-8-mobile@1x.jpg 1x, img/product-8-mobile@2x.jpg 2x">
                   <source media="(max-width:1023px)"
                     srcset="img/product-8-tablet@1x.jpg 1x, img/product-8-tablet@2x.jpg 2x">
                   <img class="products__image" src="img/product-8-desktop@1x.jpg"
-                    srcset="img/product-8-desktop@2x.jpg 2x" width="270" height="272"
-                    alt="purple-gemstone-necklace">
+                    srcset="img/product-8-desktop@2x.jpg 2x" width="270" height="272" alt="purple-gemstone-necklace">
                 </picture>
                 <h3>Necklace with amethyst</h3>
                 <span>$ 145</span>
