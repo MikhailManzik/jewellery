@@ -33,3 +33,28 @@
 .filter-range__label--max {
   margin-right: 9px;
 }
+
+
+@media (max-width: $tablet-width) {
+  .filter-range {
+    margin-top: 18px;
+  }
+
+  .filter-range__money {
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  .filter-range__input {
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  .filter-range__label--min {
+    margin-left: 36px;
+  }
+
+  .filter-range__label--max {
+    margin-right: 60px;
+  }
+}

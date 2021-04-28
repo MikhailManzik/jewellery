@@ -39,3 +39,23 @@
 .filter-controls__toggle-max {
   right: 27px;
 }
+
+
+@media (max-width: $tablet-width) {
+  .filter-controls__toggle {
+    width: 18px;
+    height: 18px;
+  }
+
+  .filter-controls__bar {
+    width: 52%;
+  }
+
+  .filter-controls__toggle-min {
+    left: 47px;
+  }
+
+  .filter-controls__toggle-max {
+    right: 119px;
+  }
+}
