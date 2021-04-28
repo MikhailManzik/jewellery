@@ -114,6 +114,9 @@
   }
 
   .intro--catalog-page {
+    margin-bottom: 40px;
+    padding-top: 79px;
+    padding-bottom: 84px;
     background-image: url("../img/bg-catalog-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -134,5 +137,15 @@
   .intro__wrapper span {
     font-size: 34px;
     line-height: 29.2px;
+  }
+
+  .intro--catalog-page p {
+    font-size: 34px;
+    line-height: 44.2px;
+  }
+
+  .intro--catalog-page span {
+    font-size: 22px;
+    line-height: 26.4px;
   }
 }

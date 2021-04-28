@@ -135,12 +135,18 @@
 
 @media (max-width: $tablet-width) {
   .filter {
+    display: flex;
+    justify-content: center;
     margin-bottom: 60px;
   }
 
   .filter--hidden {
     width: 0;
     height: 0;
+  }
+
+  .filter--js {
+    justify-content: flex-start;
   }
 
   .filter--position {
@@ -284,5 +290,58 @@
     height: 14px;
     fill: #ffffff;
     transform: translate(0, 8px);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter--position {
+    padding-top: 51px;
+  }
+
+  .filter__products {
+    width: 290px;
+    margin-left: 0px;
+  }
+
+  .filter__products--show {
+    width: 270px;
+    margin-left: 25px;
+  }
+
+  .filter__wrapper {
+    margin-bottom: 30px;
+  }
+
+  .filter__legend {
+    padding: 25px 20px;
+  }
+
+  .filter__legend svg {
+    top: 27px;
+    right: 17px;
+}
+
+  .filter__fields {
+    margin-top: -6px;
+    padding-left: 30px;
+    padding-bottom: 23px;
+  }
+
+  .filter__fields--price {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .filter__form--position {
+    width: 270px;
+  }
+
+  .filter__buttons {
+    padding: 0 20px;
+  }
+
+  .filter__close {
+    right: -10px;
+    top: 9px;
   }
 }

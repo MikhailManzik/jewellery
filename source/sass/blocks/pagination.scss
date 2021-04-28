@@ -37,5 +37,11 @@
 @media (max-width: $mobile-width) {
   .pagination-list {
     margin-top: -27px;
+    padding-left: 6px;
+  }
+
+  .pagination-list__page {
+    margin-right: 7px;
+    padding: 0px 8px;
   }
 }

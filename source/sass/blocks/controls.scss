@@ -48,7 +48,8 @@
   }
 
   .filter-controls__bar {
-    width: 52%;
+    left: 50px;
+    width: 50%;
   }
 
   .filter-controls__toggle-min {
@@ -57,5 +58,34 @@
 
   .filter-controls__toggle-max {
     right: 119px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter-controls {
+    margin-top: 17px;
+  }
+
+  .filter-controls__toggle {
+    width: 18px;
+    height: 18px;
+  }
+
+  .filter-controls__scale {
+    left: 0;
+    width: 100%;
+  }
+
+  .filter-controls__bar {
+    left: 42px;
+    width: 60%;
+  }
+
+  .filter-controls__toggle-min {
+    left: 40px;
+  }
+
+  .filter-controls__toggle-max {
+    right: 54px;
   }
 }

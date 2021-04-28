@@ -98,3 +98,39 @@
     top: -21px;
   }
 }
+
+
+@media (max-width: $mobile-width) {
+  .products {
+    margin-top: -20px;
+  }
+
+  .products__wrapper {
+    margin-bottom: 66px;
+  }
+
+  .products__list {
+    margin-bottom: 43px;
+  }
+
+  .products__item {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 26px;
+
+    &:nth-child(3n) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .products__link img {
+    margin-bottom: 14px;
+  }
+
+  .products__button {
+    display: none;
+  }
+}

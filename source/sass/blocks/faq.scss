@@ -47,7 +47,6 @@
 }
 
 .faq__item p {
-  display: none;
   margin: 0;
   margin-top: 10px;
   padding-right: 360px;
@@ -58,8 +57,8 @@
   transition: 0.5s;
 }
 
-.faq__item--active p {
-  display: block;
+.faq__item--hidden p {
+  display: none;
 }
 
 .faq__arrow {
