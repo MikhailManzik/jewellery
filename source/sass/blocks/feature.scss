@@ -1,0 +1,29 @@
+.feature {
+  margin-bottom: 51px;
+}
+
+.feature__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px 0;
+  margin-bottom: 2px;
+}
+
+.feature__desc,
+.feature__value {
+  font-family: $font-pop;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.2px;
+}
+
+.feature__value {
+  font-weight: 400;
+}
+
+@media (max-width: $mobile-width) {
+  .feature {
+    margin-bottom: 42px;
+  }
+}

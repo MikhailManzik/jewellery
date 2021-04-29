@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.product-slider__indent {
+  margin-bottom: 124px;
+}
+
 .product-slider__wrapper h2 {
   margin: 0;
   margin-bottom: 15px;
@@ -122,6 +126,10 @@
 @media (max-width: $tablet-width) {
   .product-slider {
     margin-bottom: 64px;
+  }
+
+  .product-slider__indent {
+    margin-bottom: 73px;
   }
 
   .product-slider__wrapper h2 {
