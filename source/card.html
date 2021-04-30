@@ -200,7 +200,7 @@
       </div>
     </section>
 
-    <section class="product-slider product-slider__indent container">
+    <section class="product-slider product-slider--indent container">
       <div class="product-slider__wrapper">
         <h2>You May Also Like</h2>
         <a class="product-slider__catalog-link" href="catalog.html">Shop Now</a>
@@ -603,11 +603,11 @@
     </div>
   </footer>
 
-  <section class="popup-add-product">
-    <div class="popup-add-product__wrapper">
+  <section class="popup">
+    <div class="popup__wrapper popup__add-product add-product">
       <h2>The item was added to your cart</h2>
-      <div class="popup-add-product__products">
-        <div class="popup-add-product__photo">
+      <div class="add-product__products">
+        <div class="add-product__photo">
           <picture>
             <!-- 1х: 290px; 2x: 580px -->
             <source type="image/webp" media="(max-width:767px)"
@@ -627,19 +627,19 @@
               height="79" alt="Gold Necklace">
           </picture>
         </div>
-        <div class="popup-add-product__name">
+        <div class="add-product__name">
           <h3>Gold Necklace </h3>
           <span>$ 115</span>
         </div>
-        <div class="popup-add-product__counter">
-          <button class="popup-add-product__key">
+        <div class="add-product__counter">
+          <button class="add-product__key">
             <svg width="14" height="14">
               <use xlink:href="img/sprite_auto.svg#icon-plus"></use>
             </svg>
             <span class="visually-hidden">Plus</span>
           </button>
-          <span class="popup-add-product__value">1</span>
-          <button class="popup-add-product__key">
+          <span class="add-product__value">1</span>
+          <button class="add-product__key">
             <svg width="14" height="14">
               <use xlink:href="img/sprite_auto.svg#icon-minus"></use>
             </svg>
@@ -647,18 +647,20 @@
           </button>
         </div>
       </div>
-      <div class="popup-add-product__info">
-        <span>You have 1 item in the cart</span>
-        <span>Cart subtotal: $ 115</span>
+      <div class="add-product__info">
+        <span class="add-product__cart-info">You have 1 item in the cart</span>
+        <span class="add-product__cart-total">Cart subtotal: $ 115</span>
       </div>
-      <div class="popup-add-product__buttons">
-        <a class="button popup-add-product__button popup-add-product__button--shop" href="#">Continue shopping</a>
-        <a class="button popup-add-product__button" href="#">Checkout</a>
+      <div class="add-product__buttons">
+        <a class="button add-product__button add-product__button--shop" href="catalog.html">Continue shopping</a>
+        <a class="button add-product__button" href="#">Checkout</a>
       </div>
-      <button class="popup-add-product__close" type="button">
+      <button class="popup__close" type="button">
         <svg width="14" height="14">
           <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
         </svg>
+        <span class="visually-hidden">Close</span>
+      </button>
     </div>
   </section>
 
