@@ -42,10 +42,14 @@
   font-size: 16px;
   line-height: 20.8px;
   color: $color-black;
-}
 
-.products__link:hover h3 {
-  color: $color-brown;
+  &:hover {
+    color: $color-brown;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .products__link span {
@@ -64,9 +68,29 @@
   position: absolute;
   top: -12px;
   padding: 5px 10px;
+  font-family: $font-pop;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.8px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    color: $color-brown;
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    color: $color-brown;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1);
+    opacity: 0.6;
+  }
 }
 
 .products__button--prev {
@@ -77,17 +101,25 @@
   right: -10px;
 }
 
-.products__button span {
-  font-family: $font-pop;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20.8px;
-}
+// .products__button {
+//   font-family: $font-pop;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 20.8px;
+//   transition: 0.5s;
 
-.products__button:hover span {
-  transition: 0.5s;
-  font-size: 18px;
-}
+//   &:hover {
+//     transform: scale(1.3);
+//   }
+
+//   &:focus {
+//     transform: scale(1.3);
+//   }
+
+//   &:active {
+//     transform: scale(1);
+//   }
+// }
 
 @media (max-width: $tablet-width) {
   .products__list {

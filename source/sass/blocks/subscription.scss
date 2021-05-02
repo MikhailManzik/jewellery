@@ -40,6 +40,16 @@
   border-bottom: 1px solid #ffffff;
   background-color: transparent;
   color: #ffffff;
+  transition: 0.5s;
+
+  &:hover::placeholder {
+    color: #ffffff;
+    transition: 0.5s;
+  }
+
+  &:focus::placeholder {
+    color: #ffffff;
+  }
 }
 
 .subscription__button {
@@ -55,6 +65,15 @@
   border: none;
   color: #ffffff;
   cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
 }
 
 .subscription__button svg {

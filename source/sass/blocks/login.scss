@@ -43,9 +43,26 @@
   border-color: transparent;
   border: 1px solid transparent;
   border-bottom: 1px solid $color-black;
+  outline: none;
 
   &::placeholder {
     color: $color-grey;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $color-brown;
+  }
+
+  &:hover::placeholder {
+    color: $color-black;
+  }
+
+  &:focus {
+    border-bottom: 1px solid $color-brown;
+  }
+
+  &:focus::placeholder {
+    color: $color-black;
   }
 }
 
@@ -120,8 +137,8 @@
   }
 
   .login__fields input {
-   padding-top: 9px;
-   padding-bottom: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
 
   .login__forgot {
@@ -138,7 +155,7 @@
     }
   }
 
-  .login__wrapper{
+  .login__wrapper {
     padding-top: 80px;
   }
 

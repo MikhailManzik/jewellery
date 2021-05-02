@@ -44,6 +44,10 @@
   &:hover {
     color: $color-brown;
   }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .follow__list {
@@ -92,7 +96,7 @@
   grid-row: 2;
 }
 
-.follow__image {
+.follow__item img {
   display: block;
   height: 100%;
 }
@@ -111,7 +115,7 @@
     grid-row-gap: 20px;
   }
 
-  .follow__image {
+  .follow__item img {
     width: auto;
     height: auto;
   }
@@ -132,6 +136,7 @@
     grid-template-rows: repeat(3, auto);
     grid-column-gap: 15px;
     grid-row-gap: 15px;
+    justify-content: center;
   }
 
   .follow__item--first {
@@ -163,4 +168,3 @@
     grid-row: 3;
   }
 }
-

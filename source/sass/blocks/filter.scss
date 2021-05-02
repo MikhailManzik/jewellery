@@ -17,7 +17,6 @@
 }
 
 .filter__type {
-  position: relative;
   margin: 0;
   padding: 0;
   border: none;
@@ -26,6 +25,19 @@
   &:last-child {
     border: none;
   }
+}
+
+.filter__legend {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 23px;
+  padding-left: 25px;
+  font-family: $font-pop;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.8px;
+  cursor: pointer;
 }
 
 .filter__legend svg {
@@ -89,17 +101,6 @@
   }
 }
 
-.filter__legend {
-  width: 100%;
-  padding: 23px;
-  padding-left: 25px;
-  font-family: $font-pop;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20.8px;
-  cursor: pointer;
-}
-
 .filter__field label {
   position: relative;
   max-width: 100%;
@@ -111,6 +112,7 @@
   font-size: 14px;
   line-height: 18.2px;
   cursor: pointer;
+  transition: 0.5s;
 
   &::after {
     content: "";
@@ -120,6 +122,14 @@
     width: 14px;
     height: 13px;
     border: 1px solid $color-brown;
+  }
+
+  &:hover {
+    color: $color-brown;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -319,7 +329,7 @@
   .filter__legend svg {
     top: 27px;
     right: 17px;
-}
+  }
 
   .filter__fields {
     margin-top: -6px;

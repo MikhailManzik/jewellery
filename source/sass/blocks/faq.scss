@@ -44,9 +44,19 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 23.4px;
+  transition: 0.5s;
+
+  &:hover {
+    color: $color-brown;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .faq__item p {
+  display: none;
   margin: 0;
   margin-top: 10px;
   padding-right: 360px;
@@ -55,10 +65,6 @@
   font-size: 16px;
   line-height: 20.8px;
   transition: 0.5s;
-}
-
-.faq__item--hidden p {
-  display: none;
 }
 
 .faq__arrow {
@@ -71,6 +77,10 @@
   fill: transparent;
   stroke: $color-brown;
   transform: rotate(180deg);
+}
+
+.faq__item--active p {
+  display: block;
 }
 
 .faq__item--active svg {

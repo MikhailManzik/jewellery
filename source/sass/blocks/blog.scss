@@ -38,6 +38,10 @@
   &:hover {
     color: $color-brown;
   }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (max-width: $tablet-width) {

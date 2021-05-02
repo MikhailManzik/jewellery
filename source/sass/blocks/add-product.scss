@@ -59,14 +59,21 @@
 .add-product__key svg {
   transition: 0.3s;
   fill: $color-grey;
-}
 
-.add-product__key:hover svg {
-  fill: $color-black;
-}
+  &:hover {
+    fill: $color-black;
+    transform: scale(1.3);
+  }
 
-.add-product__key:active svg {
-  transform: scale(1.5);
+  &:focus {
+    fill: $color-black;
+    transform: scale(1.3);
+  }
+
+  &:active {
+    fill: $color-black;
+    transform: scale(1);
+  }
 }
 
 .add-product__value {

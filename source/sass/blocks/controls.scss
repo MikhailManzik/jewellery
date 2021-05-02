@@ -30,6 +30,10 @@
   &:hover {
     transform: scale(1.3);
   }
+
+  &:active {
+    transform: scale(1);
+  }
 }
 
 .filter-controls__toggle-min {

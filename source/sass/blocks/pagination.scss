@@ -22,6 +22,11 @@
     font-size: 18px;
     transform: translateY(-2px);
   }
+
+  &:active {
+    font-size: 16px;
+    opacity: 0.6;
+  }
 }
 
 .pagination-list__page--active {
@@ -42,6 +47,6 @@
 
   .pagination-list__page {
     margin-right: 7px;
-    padding: 0px 8px;
+    padding: 0 8px;
   }
 }
