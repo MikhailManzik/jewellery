@@ -23,7 +23,6 @@ var ESC_KEY_CODE = 'Escape';
 var LEFT_MOUSE_BUTTON = 0;
 var buttonAddCard = document.querySelector('.card__button');
 
-
 header.classList.remove('header--bg');
 toggle.classList.add('toggle--color');
 search.classList.add('search--hidden');
@@ -248,4 +247,12 @@ document.addEventListener('keydown', onClosePopupPress);
 
 allButtosClosePopup.forEach(function (button) {
   button.addEventListener('click', onClosePopupClick);
+});
+
+popups.forEach(function (popup) {
+  popup.addEventListener('click', function (evt) {
+    if (evt.target === popup) {
+      closePopup();
+    }
+  });
 });
