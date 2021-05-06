@@ -135,6 +135,12 @@ if (swiperContainer) {
   swiper.slideNext();
 }
 
+if (tabsFaqItems) {
+  tabsFaqItems.forEach(function (tab) {
+    tab.classList.remove('faq__item--active');
+  });
+}
+
 switchTabsAccordion(tabsFaqItems, 'faq__item--active');
 switchTabsAccordion(tabsFilter, 'filter__legend--active');
 

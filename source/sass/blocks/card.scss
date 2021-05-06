@@ -95,12 +95,12 @@
 }
 
 .card__dilivery span {
-  display: inline-block;
   font-family: $font-pop;
   font-weight: 500;
   font-size: 14px;
   line-height: 20.8px;
   color: $color-grey;
+  text-align: center;
 }
 
 @media (max-width: $desktop-width-1240) {
