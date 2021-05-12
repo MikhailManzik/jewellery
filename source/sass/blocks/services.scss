@@ -1,5 +1,4 @@
 .services {
-  flex-shrink: 0;
   margin: 0;
   margin-left: -3px;
   padding: 0;
@@ -7,11 +6,12 @@
 }
 
 .services__item {
+  display: flex;
   margin-bottom: 13px;
 }
 
 .services__link {
-  display: block;
+  display: flex;
   padding: 5px 10px;
   font-family: $font-pop;
   font-weight: 500;
@@ -21,7 +21,8 @@
   text-decoration: none;
   transition: 0.5s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-brown;
   }
 

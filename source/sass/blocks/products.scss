@@ -43,7 +43,8 @@
   line-height: 20.8px;
   color: $color-black;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-brown;
   }
 
@@ -77,7 +78,8 @@
   cursor: pointer;
   transition: 0.5s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-brown;
     transform: scale(1.1);
   }

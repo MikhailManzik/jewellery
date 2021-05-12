@@ -18,7 +18,8 @@
   cursor: pointer;
   transition: 0.5s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     font-size: 18px;
     transform: translateY(-2px);
   }

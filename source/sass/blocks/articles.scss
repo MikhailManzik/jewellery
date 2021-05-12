@@ -95,7 +95,8 @@
     background-color: $color-brown;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-brown;
   }
 

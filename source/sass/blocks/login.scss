@@ -81,7 +81,8 @@
   text-decoration: none;
   transition: 0.5s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-brown;
   }
 
@@ -114,7 +115,8 @@
   text-decoration: none;
   transition: 0.5s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-brown;
   }
 

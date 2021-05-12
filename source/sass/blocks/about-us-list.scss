@@ -7,14 +7,16 @@
 }
 
 .about-us-list--footer {
-  flex-shrink: 0;
   display: block;
   margin-right: 36px;
 }
 
+.about-us-list__item {
+  display: flex;
+}
+
 .about-us-list__item--footer {
-  padding-top: 7px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 
   &:last-child {
     padding-bottom: 0;
@@ -22,6 +24,7 @@
 }
 
 .about-us-list__link {
+  display: flex;
   font-family: $font-pop;
   font-weight: 500;
   font-size: 18px;
@@ -37,7 +40,8 @@
   color: #ffffff;
   transition: 0.5s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-brown;
   }
 
@@ -74,7 +78,8 @@
     padding: 10px;
     transition: 0.5s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-black;
     }
 
@@ -89,13 +94,18 @@
     line-height: 20.8px;
     color: #ffffff;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-brown;
     }
   }
 }
 
 @media (max-width: $mobile-width) {
+  .about-us-list {
+    margin-bottom: 13px;
+  }
+
   .about-us-list--footer {
     margin-right: 0;
     margin-bottom: 32px;

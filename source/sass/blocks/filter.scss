@@ -65,6 +65,7 @@
 }
 
 .filter__field {
+  display: flex;
   margin-bottom: 4px;
 
   &:last-child {
@@ -124,7 +125,8 @@
     border: 1px solid $color-brown;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-brown;
   }
 
@@ -287,7 +289,8 @@
     cursor: pointer;
     transition: 0.5s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       transform: scale(1.3);
     }
   }

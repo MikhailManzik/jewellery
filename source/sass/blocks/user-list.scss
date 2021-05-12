@@ -12,6 +12,7 @@
 }
 
 .user-list__item {
+  display: flex;
   margin-left: 25px;
 }
 
@@ -25,7 +26,8 @@
   text-decoration: none;
   transition: 0.5s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-brown;
   }
 
@@ -56,12 +58,12 @@
 
   .user-list__link {
     display: block;
-    width: 100%;
     font-size: 18px;
     line-height: 23.4px;
     color: #ffffff;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-black;
     }
   }

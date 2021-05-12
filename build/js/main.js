@@ -8,7 +8,7 @@ var navigation = header.querySelector('.main-nav');
 var about = header.querySelector('.about-us-list');
 var userList = header.querySelector('.user-list');
 var cartIcon = header.querySelector('.cart__icon');
-var tabsFaqItems = document.querySelectorAll('.faq__item');
+var tabsFaqItems = document.querySelectorAll('.faq__button');
 var tabsFilter = document.querySelectorAll('.filter__legend');
 var filter = document.querySelector('.filter');
 var filterPopup = document.querySelector('.filter__products');
@@ -50,12 +50,6 @@ if (filterPopup) {
   if (!filterPopup.classList.contains('filter__products--hidden')) {
     filterPopup.classList.add('filter__products--hidden');
   }
-}
-
-if (tabsFaqItems) {
-  tabsFaqItems.forEach(function (tab) {
-    tab.classList.add('faq__item--hidden');
-  });
 }
 
 toggle.addEventListener('click', function () {
@@ -137,11 +131,11 @@ if (swiperContainer) {
 
 if (tabsFaqItems) {
   tabsFaqItems.forEach(function (tab) {
-    tab.classList.remove('faq__item--active');
+    tab.classList.remove('faq__button--active');
   });
 }
 
-switchTabsAccordion(tabsFaqItems, 'faq__item--active');
+switchTabsAccordion(tabsFaqItems, 'faq__button--active');
 switchTabsAccordion(tabsFilter, 'filter__legend--active');
 
 if (tabsFilter) {

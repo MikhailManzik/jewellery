@@ -21,23 +21,42 @@
   padding: 0;
   border: 1px solid $color-brown;
   list-style: none;
-  cursor: pointer;
 }
 
 .faq__item {
-  position: relative;
-  padding: 50px;
-  padding-top: 43px;
-  padding-bottom: 43px;
   border-bottom: 1px solid $color-brown;
-  text-align: left;
 
   &:last-child {
     border: none;
   }
 }
 
-.faq__item h3 {
+.faq__button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 50px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  color: $color-black;
+  background-color: #ffffff;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.faq__button:hover h3,
+.faq__button:focus h3 {
+  color: $color-brown;
+}
+
+.faq__button:active h3 {
+  opacity: 0.6;
+}
+
+
+.faq__button h3 {
   margin: 0;
   margin-left: -8px;
   font-family: $font-pop;
@@ -45,14 +64,6 @@
   font-size: 18px;
   line-height: 23.4px;
   transition: 0.5s;
-
-  &:hover {
-    color: $color-brown;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
 }
 
 .faq__item p {
@@ -79,11 +90,11 @@
   transform: rotate(180deg);
 }
 
-.faq__item--active p {
+.faq__button--active p {
   display: block;
 }
 
-.faq__item--active svg {
+.faq__button--active svg {
   transform: rotate(0deg);
 }
 

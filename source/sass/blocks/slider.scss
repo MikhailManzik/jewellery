@@ -40,7 +40,8 @@
     background-color: $color-brown;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-brown;
   }
 
@@ -82,7 +83,8 @@
   line-height: 20.8px;
   color: $color-black;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-brown;
   }
 
@@ -180,7 +182,7 @@
 
 @media (max-width: $mobile-width) {
   .product-slider {
-    margin-bottom: 66px;
+    margin-bottom: 57px;
   }
 
   .product-slider__catalog-link {

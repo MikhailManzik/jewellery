@@ -9,6 +9,7 @@
   align-self: flex-end;
   order: 1;
   width: 100%;
+  margin-top: 37px;
 }
 
 .main-nav__list {
@@ -25,6 +26,7 @@
 }
 
 .main-nav__link {
+  display: block;
   padding: 10px;
   font-family: $font-pop;
   font-weight: 500;
@@ -34,7 +36,8 @@
   text-decoration: none;
   transition: 0.5s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-brown;
   }
 
@@ -47,6 +50,7 @@
   .main-nav {
     grid-row: 3;
     grid-column: 1/span 4;
+    margin-top: 0;
     margin-left: -10px;
     padding-bottom: 20px;
     background-color: $color-brown;
@@ -67,6 +71,7 @@
   }
 
   .main-nav__item {
+    display: flex;
     margin: 0;
     margin-bottom: 1px;
   }
@@ -79,7 +84,8 @@
     line-height: 36px;
     color: #ffffff;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-black;
     }
   }
