@@ -47,10 +47,10 @@
 }
 
 .card__desc {
-  flex-grow: 1;
   max-width: 370px;
+  width: 100%;
   margin-top: -11px;
-  padding-right: 100px;
+  padding-right: calc(100% - 1070px);
 }
 
 .card__group-block h2 {
@@ -95,17 +95,28 @@
 }
 
 .card__dilivery span {
+  position: relative;
   font-family: $font-pop;
   font-weight: 500;
   font-size: 14px;
   line-height: 20.8px;
   color: $color-grey;
   text-align: center;
-}
 
-@media (max-width: $desktop-width-1240) {
-  .card__desc {
-    padding-right: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 1px;
+    height: 100%;
+    background-color: $color-ligth-grey;
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -118,6 +129,7 @@
     grid-template: "big-photo"
       "list-photos";
     grid-row-gap: 14px;
+    width: 50%;
     margin-right: 40px;
   }
 
@@ -144,6 +156,12 @@
     height: auto;
   }
 
+  .card__desc {
+    max-width: 100%;
+    width: 50%;
+    padding-right: 0;
+  }
+
   .card__group-block h2 {
     margin-bottom: 13px;
   }
@@ -155,12 +173,17 @@
 }
 
 @media (max-width: $mobile-width) {
+  .card {
+    margin-bottom: 57px;
+  }
+
   .card__wrapper {
     flex-direction: column;
   }
 
   .card__photo {
     grid-row-gap: 0;
+    width: 100%;
     margin-right: 0;
     margin-bottom: 40px;
   }
@@ -182,6 +205,7 @@
 
   .card__desc {
     max-width: 100%;
+    width: 100%;
     margin-top: 0;
   }
 
@@ -201,5 +225,10 @@
 
   .card__dilivery span {
     width: calc((100% - 112px) / 3);
+
+    &::after {
+      right: -26px;
+      height: 80%;
+    }
   }
 }

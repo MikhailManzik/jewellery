@@ -144,7 +144,7 @@
     margin-bottom: 64px;
   }
 
-  .product-slider__indent {
+  .product-slider--indent {
     margin-bottom: 73px;
   }
 
@@ -160,7 +160,7 @@
     }
   }
 
-  .product-slider__image {
+  .product-slider__image img {
     width: 100%;
   }
 
@@ -180,7 +180,7 @@
 
 @media (max-width: $mobile-width) {
   .product-slider {
-    margin-bottom: 54px;
+    margin-bottom: 66px;
   }
 
   .product-slider__catalog-link {

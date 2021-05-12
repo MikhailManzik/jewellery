@@ -16,6 +16,10 @@
   width: 50%;
 }
 
+.footer__wrapper--padding {
+  padding-bottom: 51px;
+}
+
 @media (max-width: $tablet-width) {
   .footer__wrapper {
     padding-top: 50px;

@@ -70,6 +70,7 @@
   width: 430px;
   padding-left: 45px;
   padding-right: 45px;
+  padding-bottom: 50px;
 
   &::before {
     display: none;
@@ -122,5 +123,9 @@
   .popup__close svg {
     width: 14px;
     height: 14px;
+  }
+
+  .popup--add-product {
+    padding: 0 15px;
   }
 }

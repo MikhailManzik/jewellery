@@ -157,6 +157,7 @@
 
   .filter--js {
     justify-content: flex-start;
+    margin-bottom: 0;
   }
 
   .filter--position {
@@ -304,6 +305,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .filter--js {
+    margin-bottom: 40px;
+  }
+
   .filter--position {
     padding-top: 51px;
   }
