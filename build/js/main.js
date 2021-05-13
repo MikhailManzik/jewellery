@@ -8,7 +8,7 @@ var navigation = header.querySelector('.main-nav');
 var about = header.querySelector('.about-us-list');
 var userList = header.querySelector('.user-list');
 var cartIcon = header.querySelector('.cart__icon');
-var tabsFaqItems = document.querySelectorAll('.faq__button');
+var tabsFaqItems = document.querySelectorAll('.faq__link');
 var tabsFilter = document.querySelectorAll('.filter__legend');
 var filter = document.querySelector('.filter');
 var filterPopup = document.querySelector('.filter__products');
@@ -22,6 +22,17 @@ var allButtosClosePopup = document.querySelectorAll('.popup__close');
 var ESC_KEY_CODE = 'Escape';
 var LEFT_MOUSE_BUTTON = 0;
 var buttonAddCard = document.querySelector('.card__button');
+var form = popupLogin.querySelector('.login__form');
+var email = form.querySelector('#email');
+var password = form.querySelector('#password');
+var isStorageSupport = true;
+var storage = '';
+
+try {
+  storage = localStorage.getItem('email');
+} catch (err) {
+  isStorageSupport = false;
+}
 
 header.classList.remove('header--bg');
 toggle.classList.add('toggle--color');
@@ -76,7 +87,8 @@ toggle.addEventListener('click', function () {
 
 var switchTabsAccordion = function (tabs, className) {
   tabs.forEach(function (tab) {
-    tab.addEventListener('click', function () {
+    tab.addEventListener('click', function (evt) {
+      evt.preventDefault();
       if (tab.classList.contains(className)) {
         tab.classList.remove(className);
       } else {
@@ -91,7 +103,8 @@ var swiperContainer = document.querySelector('.swiper-container');
 if (swiperContainer) {
   var swiper = new window.Swiper(swiperContainer, {
     spaceBetween: 30,
-    loop: true,
+    // loop: true,
+    // loopPreventsSlide: true,
 
     pagination: {
       el: '.swiper-pagination',
@@ -104,7 +117,7 @@ if (swiperContainer) {
     },
 
     breakpoints: {
-      0: {
+      320: {
         slidesPerView: 2,
         slidesPerGroup: 2,
       },
@@ -131,11 +144,11 @@ if (swiperContainer) {
 
 if (tabsFaqItems) {
   tabsFaqItems.forEach(function (tab) {
-    tab.classList.remove('faq__button--active');
+    tab.classList.remove('faq__link--active');
   });
 }
 
-switchTabsAccordion(tabsFaqItems, 'faq__button--active');
+switchTabsAccordion(tabsFaqItems, 'faq__link--active');
 switchTabsAccordion(tabsFilter, 'filter__legend--active');
 
 if (tabsFilter) {
@@ -213,13 +226,22 @@ var closePopup = function () {
 };
 
 var onOpenPopupLogin = function (evt) {
-  var form = popupLogin.querySelector('.login__form');
-  var email = form.querySelector('.login__label--email input');
-  email.focus();
   evt.preventDefault();
   openPopupLogin();
 
+  if (storage) {
+    email.value = storage;
+    password.focus();
+  } else {
+    email.focus();
+  }
 };
+
+form.addEventListener('submit', function () {
+  if (isStorageSupport) {
+    localStorage.setItem('email', email.value);
+  }
+});
 
 var onOpenPopupAddProduct = function (evt) {
   evt.preventDefault();

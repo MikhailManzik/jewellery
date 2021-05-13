@@ -64,6 +64,7 @@
 
 .product-slider__item {
   flex-shrink: 0;
+  margin-right: 30px;
 }
 
 .product-slider__link {
@@ -152,6 +153,10 @@
 
   .product-slider__wrapper h2 {
     margin-bottom: 10px;
+  }
+
+  .product-slider__item {
+    width: calc((100% - 30px) / 2);
   }
 
   .product-slider__catalog-link {

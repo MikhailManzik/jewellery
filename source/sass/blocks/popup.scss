@@ -10,17 +10,15 @@
 
 .popup--no-js {
   position: fixed;
+  display: none;
   padding: 0 15px;
-  visibility: hidden;
-  opacity: 0;
 }
 
 .popup--show {
   position: fixed;
   padding: 0 15px;
   background: rgba(29, 22, 19, 0.25);
-  visibility: visible;
-  opacity: 1;
+  display: block;
 }
 
 .popup__wrapper {
