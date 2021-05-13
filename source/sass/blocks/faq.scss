@@ -24,6 +24,10 @@
 }
 
 .faq__item {
+  position: relative;
+  padding: 50px;
+  padding-top: 43px;
+  padding-bottom: 43px;
   border-bottom: 1px solid $color-brown;
 
   &:last-child {
@@ -32,11 +36,7 @@
 }
 
 .faq__link {
-  position: relative;
   display: block;
-  padding: 50px;
-  padding-top: 43px;
-  padding-bottom: 43px;
   color: $color-black;
   text-align: left;
   text-decoration: none;
