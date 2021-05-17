@@ -150,6 +150,7 @@
 
 @media (max-width: $mobile-width) {
   .login {
+    width: 270px;
     background-image: url("../img/img-popup-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

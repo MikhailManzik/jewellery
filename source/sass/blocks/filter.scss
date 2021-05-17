@@ -203,7 +203,7 @@
   .filter__form {
     width: 442px;
     margin-top: 27px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     background-color: #ffffff;
     box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
   }
@@ -325,6 +325,10 @@
   .filter__products--show {
     width: 270px;
     margin-left: 25px;
+  }
+
+  .filter__form {
+    padding-bottom: 70px;
   }
 
   .filter__wrapper {
