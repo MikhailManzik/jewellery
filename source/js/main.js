@@ -65,6 +65,7 @@ if (filterPopup) {
 
 toggle.addEventListener('click', function () {
   if (toggle.classList.contains('toggle--color')) {
+    body.classList.add('scroll');
     header.classList.add('header--bg');
     toggle.classList.remove('toggle--color');
     search.classList.remove('search--hidden');
@@ -74,6 +75,7 @@ toggle.addEventListener('click', function () {
     userList.classList.remove('user-list--hidden');
     cartIcon.classList.remove('cart__icon--color');
   } else {
+    body.classList.remove('scroll');
     header.classList.remove('header--bg');
     toggle.classList.add('toggle--color');
     search.classList.add('search--hidden');

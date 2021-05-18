@@ -45,6 +45,7 @@
   border: 1px solid transparent;
   border-bottom: 1px solid $color-black;
   outline: none;
+  -webkit-appearance: none;
 
   &::placeholder {
     color: $color-grey;
