@@ -1,3 +1,7 @@
+.add-product {
+  margin-top: 372px;
+}
+
 .add-product h2 {
   margin: 0;
   padding-bottom: 47px;
@@ -122,6 +126,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .add-product {
+    margin-top: 258px;
+  }
+
   .add-product__products {
     margin-bottom: 44px;
   }
@@ -148,6 +156,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .add-product {
+    margin-top: 46px;
+  }
+
   .add-product h2 {
     margin-bottom: 32px;
     padding: 0 30px;

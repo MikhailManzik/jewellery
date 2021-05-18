@@ -103,33 +103,49 @@ var swiperContainer = document.querySelector('.swiper-container');
 if (swiperContainer) {
   var swiper = new window.Swiper(swiperContainer, {
     spaceBetween: 30,
-    // loop: true,
-    // loopPreventsSlide: true,
-
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      bulletClass: 'pagination-list__page',
-      bulletActiveClass: 'pagination-list__page--active',
-      renderBullet: function (index, className) {
-        return '<button class="' + className + '">' + (index + 1) + '</button>';
-      }
-    },
+    loop: true,
+    loopPreventsSlide: true,
 
     breakpoints: {
-      320: {
+      0: {
         slidesPerView: 2,
         slidesPerGroup: 2,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          type: 'custom',
+          renderCustom: function (swiper, current, total) {
+            return current + ' of ' + total;
+          },
+        },
       },
 
       768: {
         slidesPerView: 2,
         slidesPerGroup: 2,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          bulletClass: 'pagination-list__page',
+          bulletActiveClass: 'pagination-list__page--active',
+          renderBullet: function (index, className) {
+            return '<button class="' + className + '">' + (index + 1) + '</button>';
+          }
+        },
       },
 
       1024: {
         slidesPerView: 4,
         slidesPerGroup: 4,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          bulletClass: 'pagination-list__page',
+          bulletActiveClass: 'pagination-list__page--active',
+          renderBullet: function (index, className) {
+            return '<button class="' + className + '">' + (index + 1) + '</button>';
+          }
+        },
       },
     },
 
@@ -138,8 +154,6 @@ if (swiperContainer) {
       prevEl: '.swiper-button-prev',
     },
   });
-
-  swiper.slideNext();
 }
 
 if (tabsFaqItems) {
@@ -205,12 +219,6 @@ var showButtonsClosePopups = function () {
 
 showButtonsClosePopups();
 
-var openPopupLogin = function () {
-  popupLogin.classList.remove('popup--no-js');
-  popupLogin.classList.add('popup--show');
-  body.classList.add('scroll');
-};
-
 var openPopupAddProduct = function () {
   popupAddProduct.classList.remove('popup--no-js');
   popupAddProduct.classList.add('popup--show');
@@ -227,7 +235,9 @@ var closePopup = function () {
 
 var onOpenPopupLogin = function (evt) {
   evt.preventDefault();
-  openPopupLogin();
+  popupLogin.classList.remove('popup--no-js');
+  popupLogin.classList.add('popup--show');
+  body.classList.add('scroll');
 
   if (storage) {
     email.value = storage;
