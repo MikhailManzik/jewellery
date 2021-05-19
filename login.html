@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="jewellery, earrings, necklace">
+  <title>Jewellery</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/poppins-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/poppins-v15-latin-500.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/poppins-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-italic.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-500.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-500italic.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" type="font/woff2" crossorigin="">
+</head>
+
+<body>
+  <header class="header header--bg">
+    <div class="header__wrapper container">
+      <button class="header__toggle toggle">
+        <svg class="toggle__icon" width="25" height="16">
+          <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+        </svg>
+        <span class="visually-hidden">Open menu</span>
+      </button>
+      <div class="header__search search">
+        <form class="search__form" action="https://echo.htmlacademy.ru" method="GET">
+          <svg class="search__icon" width="14" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+          </svg>
+          <label>
+            <input type="text" name="text for search" placeholder="Type here to search" minlength="1" maxlength="25" required="">
+          </label>
+        </form>
+      </div>
+      <a class="header__logo logo" href="index.html">
+        <svg class="logo__icon" width="66" height="66">
+          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="header__user-list user-list">
+        <li class="user-list__item">
+          <a class="user-list__link" href="#">Login</a>
+        </li>
+      </ul>
+      <div class="header__cart cart">
+        <a class="cart__link" href="#">
+          <span class="cart__item-name">Cart</span>
+          <span class="cart__counter">0</span>
+          <svg class="cart__icon" width="20" height="18">
+            <use xlink:href="img/sprite_auto.svg#icon-basket"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="header__main-nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">What’s new</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Chokers</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Necklaces</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Rings</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Earrings</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__about-us-list about-us-list">
+        <li class="about-us-list__item">
+          <a class="about-us-list__link" href="#">About CH</a>
+        </li>
+        <li class="about-us-list__item">
+          <a class="about-us-list__link" href="#">Stores & Hours</a>
+        </li>
+        <li class="about-us-list__item">
+          <a class="about-us-list__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Enter</h1>
+    <section class="popup popup--login">
+      <div class="popup__wrapper popup__wrapper--login login">
+        <div class="login__wrapper">
+          <h2>Log In</h2>
+          <form class="login__form" action="https://echo.htmlacademy.ru" method="GET">
+            <div class="login__fields">
+              <label class="login__label login__label--email">
+                <input id="email" type="email" name="email" placeholder="Your E-mail" minlength="1" maxlength="25" required="">
+              </label>
+              <label class="login__label login__label--password">
+                <input id="password" type="password" name="password" placeholder="Password" minlength="6" maxlength="25" required="">
+              </label>
+            </div>
+            <a class="login__forgot" href="#">Forgot your password?</a>
+            <button class="button login__button" type="submit">Log In</button>
+            <div class="login__create">
+              <span>Don’t have an account?</span>
+              <a class="login__link" href="#">Sign up</a>
+            </div>
+          </form>
+          <button class="popup__close popup__close--size" type="button">
+            <svg width="14" height="14">
+              <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+            </svg>
+            <span class="visually-hidden">Close</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <div class="footer__subscription subscription">
+        <p>The good stuff in&nbsp;your inbox</p>
+        <span>News and updates from CH. No&nbsp;spam, we&nbsp;promise.</span>
+        <form class="subscription__form" action="https://echo.htmlacademy.ru" method="POST">
+          <label>
+            <input type="email" name="email" placeholder="Your E-mail" minlength="1" maxlength="25" required="">
+          </label>
+          <button class="subscription__button" type="submit">
+            Sign Up
+            <svg width="30" height="11">
+              <use xlink:href="img/sprite_auto.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="footer__group-block">
+        <ul class="footer__services services">
+          <li class="services__item">
+            <a class="services__link" href="#">Ordering & Payment</a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">Terms & Conditions</a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">Returns & Exchanges</a>
+          </li>
+          <li class="services__item">
+            <a class="services__link" href="#">Delivery</a>
+          </li>
+        </ul>
+        <ul class="footer__about-us-list about-us-list about-us-list--footer">
+          <li class="about-us-list__item about-us-list__item--footer">
+            <a class="about-us-list__link  about-us-list__link--footer" href="#">About CH</a>
+          </li>
+          <li class="about-us-list__item about-us-list__item--footer">
+            <a class="about-us-list__link  about-us-list__link--footer" href="#">Stores & Hours</a>
+          </li>
+          <li class="about-us-list__item about-us-list__item--footer">
+            <a class="about-us-list__link  about-us-list__link--footer" href="#">Jobs</a>
+          </li>
+          <li class="about-us-list__item about-us-list__item--footer">
+            <a class="about-us-list__link  about-us-list__link--footer" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="footer__socials-list socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#" aria-label="Facebook">
+              <svg class="socials-list__icon" width="8" height="15">
+                <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+              </svg>
+              <span class="socials-list__social-name">Facebook</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#" aria-label="Instagram">
+              <svg class="socials-list__icon" width="15" height="15">
+                <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
+              </svg>
+              <span class="socials-list__social-name">Instagram</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#" aria-label="Pinterest">
+              <svg class="socials-list__icon" width="16" height="15">
+                <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
+              </svg>
+              <span class="socials-list__social-name">Pinterest</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link" href="#" aria-label="Twitter">
+              <svg class="socials-list__icon" width="15" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+              </svg>
+              <span class="socials-list__social-name">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
