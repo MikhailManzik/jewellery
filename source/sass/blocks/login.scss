@@ -44,6 +44,7 @@
   border-color: transparent;
   border: 1px solid transparent;
   border-bottom: 1px solid $color-black;
+  border-radius: 0;
   outline: none;
 
   &::placeholder {
