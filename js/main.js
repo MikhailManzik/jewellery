@@ -107,54 +107,6 @@ if (swiperContainer) {
     spaceBetween: 30,
     loop: true,
     loopPreventsSlide: true,
-
-    breakpoints: {
-      0: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          type: 'custom',
-          renderCustom: function (swiper, current, total) {
-            return current + ' of ' + total;
-          },
-        },
-      },
-
-      768: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          bulletClass: 'pagination-list__page',
-          bulletActiveClass: 'pagination-list__page--active',
-          renderBullet: function (index, className) {
-            return '<button class="' + className + '">' + (index + 1) + '</button>';
-          }
-        },
-      },
-
-      1024: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          bulletClass: 'pagination-list__page',
-          bulletActiveClass: 'pagination-list__page--active',
-          renderBullet: function (index, className) {
-            return '<button class="' + className + '">' + (index + 1) + '</button>';
-          }
-        },
-      },
-    },
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
   });
 }
 
